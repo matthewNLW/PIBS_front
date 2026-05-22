@@ -1,0 +1,14 @@
+{
+  "name": "pibs-front",
+  "version": "1.0.0",
+  "description": "Project initialized with Tailwind CSS v3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx serve .",
+    "build:css": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/output.css",
+    "watch:css": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

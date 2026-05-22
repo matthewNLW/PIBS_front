@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-[#FAFAFA] text-[#475569] antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif text-[#0F172A];
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)];
+  }
+  
+  .premium-shadow {
+    @apply shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)];
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.1)];
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+
+  /* Force Booqable widgets to only show Add-to-Cart controls, hiding redundant titles/prices/images */
+  .booqable-product .booqable-card-image,
+  .booqable-product .booqable-card-header,
+  .booqable-product .booqable-card-title,
+  .booqable-product .booqable-card-price,
+  .booqable-product .booqable-card-description,
+  .booqable-product .booqable-product-image,
+  .booqable-product .booqable-product-title,
+  .booqable-product .booqable-product-price,
+  .booqable-product .booqable-product-description {
+      display: none !important;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

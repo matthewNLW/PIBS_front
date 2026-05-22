@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Build outputs and temp files
+dist/
+.DS_Store
+Thumbs.db
+
+# Large asset files / archives
+*.zip
+pawleysislandbeachservice-photo-download-1of1/
+
+# Python caches
+__pycache__/
+*.pyc
