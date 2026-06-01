@@ -5,13 +5,14 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        serif: ['"Playfair Display"', 'serif'],
+        serif: ['Marcellus', 'serif'],
       },
       colors: {
         navy: '#0F172A',
         slate: '#475569',
-        'brand-blue': '#70B2D4',
-        'brand-yellow': '#FDBA18'
+        'brand-blue': '#188cec',
+        'brand-yellow': '#ffde00',
+        'brand-yellow-dark': '#ffcf1c',
       }
     },
   },
